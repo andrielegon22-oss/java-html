@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+<h1>Condicionais em Javascript</h1>
+
+<script>
+    let idade = 2
+    
+
+  // Estrutura Condicional IF
+if (idade  >= 18) {
+         console.log('É maior de idade')
+} else {
+    console.log('É menor de idade')
+}
+
+// Estrutura condicional Encadeadda
+
+let media = 3
+
+if (media >=8) {
+    console.log('passou direto')
+} else if (media >= 4) {
+console.log('Está em Recuperação ....')
+} else {
+    console.log('Reprovou! Tente de novo.')
+}
+
+// Estrutura condicional Ternária
+let perfil = 'Admin'
+
+const ACESSO = perfil == 'Admin' ? 'Acesso permitido' : 'Acesso negado' 
+
+console.log('Acesso: ', ACESSO)
+
+// Tipos de comparação
+// Igualdade: ==
+//Diferença != 
+// Identico: ===
+// Não identico !==
+// Relacionais: > >= < <=
+// Operador Lógico: E -> &&
+// Operador Lógico OU -> ||
+
+// Estrutura condicional SWITCH
+const codigpo = 1 
+switch (codigpo) {
+    case 1:
+        console.log('setor administração')
+        break 
+        case '2' :
+        console.log('setor RH')
+        break
+        default:
+            console.log('setor não identificado')
+}
+
+
+
+</script>
+</body>
+</html>
