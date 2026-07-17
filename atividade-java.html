@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
-<h1>Atividade perfil em condições</h1>
 
-<label for="perfil">Perfil</label>
-<input type="text" id="perfil">
+    <h1>Atividade Validar Dia</h1>
 
-<br><br>
+    <label for="dia">Dia</label>
+    <input type="number" id="Dia">
 
- <button onclick="validarPerfil()">Verificar</button>
+    <br><br>
+
+    <button onclick="functionValidarDia()">Validar dia</button>
+
+    <script>
+
+        function ValidarDia() {
+            const inputdia = document.getElementById('dia')
+            const dia = inputDia.Value
+
+            switch (dia)
+                case '1':
+                console.log('segunda-feira')
+                break
+                case '2':
+                    console.log('terça-feira')
+                    break
+                default:
+                    console.log('setor não identificado')
+            }
 
 
-<script>
-
-let perfil = 'Admin'
-
-const ACESSO = perfil == 'Admin' ? 'Acesso Permitido!' : 'Acesso Negado'
-console.log('Acesso: ', ACESSO)
-
-let perfil = 'Admin'
-
-if (perfil = TI) {
-    console.log('Acesso master')
-} else if (media >= 4) {
-console.log('Está em Recuperação ....')
-} else {
-    console.log('Reprovou! Tente de novo.')
-</script>
+    </script>
 
 </body>
+
 </html>

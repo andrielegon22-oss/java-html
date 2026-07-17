@@ -1,0 +1,85 @@
+|
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Média dos alunos</h1>
+
+    <label for="aluno">Média</label>
+    <input type="text" id="aluno">
+
+    <h3>notas</h3>
+    <div class="notas">
+
+        <input type="number" id="notaA">
+        <input type="number" id="notaB">
+        <input type="number" id="notaC">
+        <input type="number" id="notaD">
+    </div>
+
+    <button onclick="calcularMedia()">Calcular a Média</button>
+    <br><br>
+    <div class="resultados" id="resultados"></div>
+    <label for="nome">Média</label>
+    <input type="text" id="media">
+
+    <br><br>
+    <button onclick="validarUsuario()">Validar usuário</button>
+    <br><br>
+
+    <div id="validacao">
+        Acumulando Resultado...
+    </div>
+
+    <script>
+
+        function validarUsuario() {
+
+            const inputNome = document.getElementById('nome')
+            const nome = inputNome.value
+        }
+        function calcularMedia() {
+
+            const inputmedia = document.getElementById('media')
+            const calcularMedia = inputmedia.value
+
+        }
+
+        /* 
+        no HTML 
+        -criar 4 inputs, um para cadas notas do aluno
+        -1 input para o nome do aluno
+        -1 botão para calcular a média 
+        -1 div para acumular os resultados dos alunos 
+        
+        No Javascript 
+        - Criar uma função que capture as informações necessárias do html
+        - Calcular a média do aluno
+        - Insira na div de fora 'Acumulativa' a seguinte saída de dados
+        
+        Resultado dos alunos
+        Harry Potter - Média: 7 - Situação: Em recuperação
+        hermione Granger - Média: 10 - situação: Aprovada
+        Rony Weasley - Média: 3 - Situação: Reprovado
+        */
+        function calcularMedia() {
+            const inputAluno = document.getElementById('aluno')
+            const inputNotaA = document.getElementById('notaA')
+            const inputNotaB = document.getElementById('notaB')
+            const inputNotaC = document.getElementById('notaC')
+            const inputNOtaD = document.getElementById('notaD')
+           const divResultados = document.getElementById('resultados')
+
+
+           const 
+        }
+</script>
+</body>
+
+</html>
